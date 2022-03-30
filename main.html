@@ -1,78 +1,8 @@
 <html>
   <head>
+    <title>Leez Go</title>
   </head>
-  <style>
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    #pizza{
-      border: 5px outset #1C6EA4;
-      border-radius: 0px 30px 0px 30px;
-      padding: 5px;
-    }
-    .card {
-      background-color: var(--background);
-      display: block;
-      width: 300px;
-      min-height: 90px;
-      border: 3px solid var(--primary);
-      padding: 15px;
-      margin: calc(50vh - 30px) auto 0 auto;
-      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
-            20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
-            30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
-            40px -40px 0 -3px var(--background), 40px -40px var(--red); 
-      transition: box-shadow 1s, top 1s, left 1s;
-      position: relative;
-      top: 0;
-      left: 0;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      top: -40px;
-      left: 40px;
-      box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
-          0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
-          0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
-          0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
-    }
-
-
-    :root {
-      --primary: #555BFF;
-      --secondary: #22D2A0;
-      --background: white;
-      --green: #1FC11B;
-      --yellow: #FFD913;
-      --orange: #FF9C55;
-      --red: #FF5555;
-    } 
-
-    *{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    .card p {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 10px;
-    }
-
-    .card h2 {
-      font-size: 14px;
-      font-family: "Archivo Black", "Archivo", sans-serif;
-      font-weight: normal;
-    }
-
-    img{
-      width: 50px;
-    }
-
-  </style>
+ 
   <body>
     Okay, Leez Go
     <p>to the mall</p>
@@ -88,35 +18,7 @@
     
   </body>
 
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Mar 30, 2022 19:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  </script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
   
 </html>
