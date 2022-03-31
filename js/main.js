@@ -27,4 +27,9 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+}
+
 //grün 47.8 71 11.4
