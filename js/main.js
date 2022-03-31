@@ -39,6 +39,12 @@ function playK() {
   audio.currentTime = 0;
   audio.play();
 }
+function playL() {
+  var audio = document.getElementById("audioL");
+  audio.pause();
+  audio.currentTime = 0;
+  audio.play();
+}
 
 function co2Rechnen(){
 
