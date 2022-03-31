@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">  
     <link rel="stylesheet" type="text/css" media="screen" href="./css/pizza.css">  
     <link rel="stylesheet" type="text/css" media="screen" href="./css/Rechner.css">  
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/cookiedingsbums.css">  
     
     
   </head>
@@ -111,6 +112,24 @@
 <!-- End page content -->
 </div>
 
+
+<div id="cookiedingsbums"><div>
+  <span style="color: #7bb51d;">Ja, auch diese Webseite verwendet Cookies. 
+    
+  </span> 
+  <a href="http://xxx.euredomain.de/euredatenschutzseite">Hier erfahrt ihr alles zum Datenschutz</a></div>
+ <span id="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">&#10006;</span>
+</div>
+
+<script>
+ if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
+ jQuery('#cookiedingsbums').hide();
+ }
+ else{
+ jQuery('#cookiedingsbums').prependTo('body');
+ jQuery('#cookiedingsbumsCloser').show();
+ }
+</script>
     
     
   </body>
