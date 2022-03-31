@@ -10,7 +10,7 @@ body {font-size:16px;}
 
 
 .w3-red, .w3-hover-red:hover {
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-image: linear-gradient(to right, #7bb51d, #353535);
   }
 
 #mySidebar{
