@@ -23,11 +23,9 @@
  
   <body>
     <div class="header">
-      <div class="companyname">
-      </div>
-  </div>
-
-  
+      <div id="klingel" onclick="playK()"></div>
+      <audio id="audioK" src="sound/klingel.mp3"></audio>
+    </div>
 
   <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
@@ -42,8 +40,8 @@
     <a href="#umfrage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Umfrage</a> 
     <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dashboard</a> 
     <a href="#co2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Co2-Rechner</a> 
-    <a class="myHupe" onclick="play()" style="margin-top: 20px;">TüT TüT </a>
-    <audio id="audio" src="sound/hupe.mp3"></audio>
+    <a class="myHupe" onclick="playH()" style="margin-top: 20px;">TüT TüT </a>
+    <audio id="audioH" src="sound/hupe.mp3"></audio>
 
     <div style="position: absolute; bottom: 20px; left: 0; color:black">
       <div class="card">
