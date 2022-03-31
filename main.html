@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/pizza.css">  
     <link rel="stylesheet" type="text/css" media="screen" href="./css/Rechner.css">  
     <link rel="stylesheet" type="text/css" media="screen" href="./css/cookiedingsbums.css">  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     
   </head>
@@ -72,7 +74,7 @@
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Willkommen -->
-  <div class="w3-container" id="dashboard">
+  <div class="w3-container" id="willkommen">
     <h1 class="w3-xxxlarge w3-text-red"><b>Willkommen.</b></h1>
     <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
     <p>Willkommen auf unserer Website! "Vorstellung"</p>
@@ -122,13 +124,8 @@
 </div>
 
 <script>
- if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
- jQuery('#cookiedingsbums').hide();
- }
- else{
  jQuery('#cookiedingsbums').prependTo('body');
  jQuery('#cookiedingsbumsCloser').show();
- }
 </script>
     
     
