@@ -1,0 +1,18 @@
+https://arcgis.esri.de/code-snippets-covid-19-dashboards-auf-der-eigenen-webseite-einbinden/
+
+https://enterprise.arcgis.com/de/portal/10.7/use/share-a-dashboard.htm
+
+https://enterprise.arcgis.com/de/portal/10.7/use/share-items.htm
+
+-- 
+Christian Knoth
+Research Associate
+Institute for Geoinformatics (ifgi)
+University of Muenster
+
+Heisenbergstraße 2
+D-48149 Muenster
+Germany
+
+Phone: +49 251 83-33056
+Fax: +49 251 83-39763
