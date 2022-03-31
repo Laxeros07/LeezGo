@@ -12,7 +12,7 @@
     min-height: 70px;
     border: 3px solid var(--primary);
     padding: 15px;
-    margin: calc(50vh - 30px) auto 0 auto;
+    /*margin: calc(50vh - 30px) auto 0 auto;*/
     box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
           20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
           30px -30px 0 -3px var(--background), 30px -30px var(--orange), 

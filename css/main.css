@@ -1,18 +1,17 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #353535;
 }
 
 .header {
-text-align: center;
-background: white;
-}
-
-#headerContainer{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1f1f1+0,9292ce+51,191970+100 */
-    background: #7ab51d; /* Old browsers */
+    text-align: center;
+    background: #7ab51d;
     padding: 20px;
     margin-bottom: 20px;
     height: 150px;
+    margin: 10px;
+    border: 5px solid rgb(47.7, 71, 11.4);
+    border-radius: 20px;
 }
 
 #headerContainer::before, #headerContainer::after{
