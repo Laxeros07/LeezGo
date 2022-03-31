@@ -27,8 +27,12 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-function play() {
-  var audio = document.getElementById("audio");
+function playH() {
+  var audio = document.getElementById("audioH");
+  audio.play();
+}
+function playK() {
+  var audio = document.getElementById("audioK");
   audio.play();
 }
 
