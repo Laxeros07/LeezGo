@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/pizza.css">  
     <link rel="stylesheet" type="text/css" media="screen" href="./css/Rechner.css">  
     <link rel="stylesheet" type="text/css" media="screen" href="./css/cookiedingsbums.css">  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     
   </head>
@@ -72,11 +74,13 @@
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Willkommen -->
-  <div class="w3-container" id="dashboard">
+  <div class="w3-container" id="willkommen">
     <h1 class="w3-xxxlarge w3-text-red"><b>Willkommen.</b></h1>
     <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-    <p>Willkommen auf unserer Website! "Vorstellung"</p>
-    <p></p>
+    <p>Willkommen auf unserer Website! Wir sind das Team von LeezGo, eine Gruppe von Geoinformatik-Stundenten der WWU Münster. Mit dieser Website wollen wir das Verkehrsmittel Fahrrad in Münster noch beliebter machen, indem wir auf Probleme hinweisen. Da seid ihr gefragt! Wir haben eine anonyme Umfrage vorbereitet, mit der wir Auto und Fahrrad fahren in Münster analysieren und so Lösungsvorschläge erarbeiten.
+    </p>
+    <p>Die Umfrage geht super schnell und hilft uns ungemein!<br>Vielen Dank!
+    </p>
   </div>
 
   <!-- Umfrage -->
@@ -95,7 +99,7 @@
     <div class="w3-container" id="dashboard">
       <h1 class="w3-xxxlarge w3-text-red"><b>Dashboard.</b></h1>
       <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-      <p>Hier seht unser Dashboard mit den gesamten Ergebnissen unserer Umfrage auf einem Blick!</p>
+      <p>Hier seht ihr direkt die Auswertung unserer Umfrage. Ihr könnt selber ableiten, welche Probleme auftreten und so eigenständig Lösungsvorschläge mit uns teilen. Schreibt uns einfach!</p>
       <p></p>
       <iframe src=“https://www.arcgis.com/apps/dashboards/206dd69ca2154a4a8a5e0d1a1631448a“ height=“600″ width=“800″ name=“Dashboard Website“>
     </div>
@@ -107,6 +111,7 @@
     <input id="kmInput" type="number" min="0" step="0.1">km
     <button id="rechnen" onCLick="co2Rechnen()">Rechnen</button>
     <div id="ergebnis"></div>
+    <p><br><br><br></p>
   </div>
 
 <!-- End page content -->
@@ -117,18 +122,13 @@
   <span style="color: #7bb51d;">Ja, auch diese Webseite verwendet Cookies. 
     
   </span> 
-  <a href="http://xxx.euredomain.de/euredatenschutzseite">Hier erfahrt ihr alles zum Datenschutz</a></div>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Hier erfahrt ihr alles zum Datenschutz</a></div>
  <span id="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">&#10006;</span>
 </div>
 
 <script>
- if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
- jQuery('#cookiedingsbums').hide();
- }
- else{
  jQuery('#cookiedingsbums').prependTo('body');
  jQuery('#cookiedingsbumsCloser').show();
- }
 </script>
     
     
