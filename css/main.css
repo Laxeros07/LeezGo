@@ -29,4 +29,31 @@ body{
 .companyname{
     /*display: inline-block;*/
     margin-top: 10px;
+    font-size: xxx-large;
+    font-style:italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #38b7b4;
+}
+
+
+.myHupe {
+	background-color:#7bb51d;
+	border-radius:28px;
+	border:1px solid #124d18;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:-2px 4px 3px #2f6627;
+}
+.myHupe:hover {
+	background-color:#5cbf2a;
+}
+.myHupe:active {
+	position:relative;
+	top:1px;
 }
