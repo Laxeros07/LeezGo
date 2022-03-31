@@ -32,4 +32,8 @@ function play() {
   audio.play();
 }
 
+function rechnen(){
+  
+}
+
 //grün 47.8 71 11.4
