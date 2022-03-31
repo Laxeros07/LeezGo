@@ -8,8 +8,8 @@
   .card {
     background-color: var(--background);
     display: block;
-    width: 300px;
-    min-height: 90px;
+    width: 250px;
+    min-height: 70px;
     border: 3px solid var(--primary);
     padding: 15px;
     margin: calc(50vh - 30px) auto 0 auto;
@@ -64,5 +64,5 @@
   }
 
   img{
-    width: 50px;
+    width: 40px;
   }

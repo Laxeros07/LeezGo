@@ -1,3 +1,30 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
+
+.header {
+text-align: center;
+background: white;
+}
+
+#headerContainer{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1f1f1+0,9292ce+51,191970+100 */
+    background: #7ab51d; /* Old browsers */
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+#headerContainer::before, #headerContainer::after{
+    content: "";
+    display: table;
+}
+
+#headerContainer::after{
+    clear: both;
+}
+
+.companyname{
+    /*display: inline-block;*/
+    margin-top: 10px;
+}

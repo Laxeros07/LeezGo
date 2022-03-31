@@ -26,3 +26,5 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+//grün 47.8 71 11.4
