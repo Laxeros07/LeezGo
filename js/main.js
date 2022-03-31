@@ -47,7 +47,7 @@ function co2Rechnen(){
   ergebnis += "<td>" + x*21 + "g/km </td>";
   ergebnis += "</tbody></tr></table>";
   
-  document.getElementById("ergebnis").innerHTML += ergebnis;
+  document.getElementById("ergebnis").innerHTML = ergebnis;
 }
 
 //grün 47.8 71 11.4
