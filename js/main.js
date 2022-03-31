@@ -42,9 +42,9 @@ function co2Rechnen(){
   ergebnis += "<th>Rad</th>";
   ergebnis += "</tr></thead>";
   ergebnis += "<tbody><tr>";
-  ergebnis += "<td>" + x*165 + "g/km </td>"; 
-  ergebnis += "<td>" + x*22 + "g/km </td>"; 
-  ergebnis += "<td>" + x*21 + "g/km </td>";
+  ergebnis += "<td>" + x*165 + "g </td>"; 
+  ergebnis += "<td>" + x*22 + "g </td>"; 
+  ergebnis += "<td>" + x*21 + "g </td>";
   ergebnis += "</tbody></tr></table>";
   
   document.getElementById("ergebnis").innerHTML = ergebnis;
