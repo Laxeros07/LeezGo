@@ -14,8 +14,8 @@ keep_org_item = False
 store_csv_w_attachments = False
 
 #connection to ArcGIS organization
-gis = GIS(portalURL, username, password)
-survey_by_id = gis.content.get(survey_item_id)
+gis = GIS(https://www.arcgis.com, hluening_wwu, emHD2YKl3zs1)
+survey_by_id = gis.content.get(6edab402fba746baa797d4b2cdeb45e5)
 
 #download survey's feature service
 rel_fs = survey_by_id.related_items('Survey2Service','forward')[0]
