@@ -35,12 +35,19 @@ function play() {
 function co2Rechnen(){
 
   let x = document.getElementById("kmInput").value;
-  let ergebnis = "";
-  ergebnis += "Auto: " + x*165 + "g/km <br>"; 
-  ergebnis += "E-Bike: " + x*22 + "g/km <br>"; 
-  ergebnis += "Rad: " + x*21 + "g/km";
+  let ergebnis = "<table class='blueTable'><thead>";
+  ergebnis += "<tr>";
+  ergebnis += "<th>Auto</th>";
+  ergebnis += "<th>E-Bike</th>";
+  ergebnis += "<th>Rad</th>";
+  ergebnis += "</tr></thead>";
+  ergebnis += "<tbody><tr>";
+  ergebnis += "<td>" + x*165 + "g/km </td>"; 
+  ergebnis += "<td>" + x*22 + "g/km </td>"; 
+  ergebnis += "<td>" + x*21 + "g/km </td>";
+  ergebnis += "</tbody></tr></table>";
   
-  document.getElementById("ergebnis").innerHTML = ergebnis;
+  document.getElementById("ergebnis").innerHTML += ergebnis;
 }
 
 //grün 47.8 71 11.4
