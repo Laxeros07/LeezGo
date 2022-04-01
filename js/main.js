@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 31, 2022 19:00:00").getTime();
+var countDownDate = new Date("Apr 1, 2022 13:00:00").getTime();
     
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -17,7 +17,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = hours + "h "
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
@@ -35,6 +35,12 @@ function playH() {
 }
 function playK() {
   var audio = document.getElementById("audioK");
+  audio.pause();
+  audio.currentTime = 0;
+  audio.play();
+}
+function playL() {
+  var audio = document.getElementById("audioL");
   audio.pause();
   audio.currentTime = 0;
   audio.play();
