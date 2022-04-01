@@ -210,8 +210,7 @@
     <div class="w3-container" id="dashboard">
       <h1 class="w3-xxxlarge w3-text-red"><b>Dashboard.</b></h1>
       <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-      <p>Hier seht ihr direkt die Auswertung unserer Umfrage. Ihr könnt selber ableiten, welche Probleme auftreten und so eigenständig Lösungsvorschläge mit uns teilen. Schreibt uns einfach!</p>
-      <p></p>
+      <p>Hier seht ihr direkt die Auswertung unserer Umfrage. Ihr könnt selber ableiten, welche Probleme auftreten und so eigenständig Lösungsvorschläge mit uns teilen. Schreibt uns einfach!</p><br>
       <iframe src="https://www.arcgis.com/apps/dashboards/206dd69ca2154a4a8a5e0d1a1631448a" style="height: 600px; width: 100%" name="Dashboard Website"><!-- //required for browser compatibility --></iframe>
     </div>
   
@@ -219,7 +218,8 @@
   <div class="w3-container" id="co2" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>CO2-Rechner.</b></h1>
     <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-  
+    <p>Der CO2-Rechner ermöglicht es dir deinen ökologischen Fußabdruck selbst zu berechnen. Gib einfach die Länge deines Weges zur Schule/Universität/Arbeit ein und der Rechner zeigt dir, wie viel CO2 du auf diesem Weg mit dem Auto, mit dem e-Bike oder mit dem Fahrrad emittierst.</p><br>
+    <p>
       <span class="input" style="padding-right:10px ;">
         <input id="kmInput" type="number" min="0" step="0.1"> km 
         <span></span>	
@@ -227,7 +227,14 @@
     
     <button class="rechnen" id="rechnen" onCLick="co2Rechnen()">Rechnen</button>
     <div id="ergebnis"></div>
-    <p><br><br><br></p>
+    <p><br><b>Die Berechnung</b><br><br>
+    Ein <b>PKW</b> emittiert bei einem Verbrauch von 6L/100km 142g CO2. Durch die Produktion wurden 6T CO2 ausgestoßen, bei einer Laufleistung von 300km bedeutet das 23g/km, insgesamt: 169g/km.<br><br>
+
+    Bei der Fahrt mit einem <b>Fahrrad</b> werden 5g/km, durch Produktion und Reifenabrieb, ausgestoßen.<br><br>
+      
+    Mit einem <b>e-Bike</b> werden 23g/km, durch Produktion und Reifenabrieb, aber auch durch die Batterie und das Aufladen dieser, emittiert.<br><br>
+    
+    Quelle: Lehmann C. 2015: Die CO2-Bilanz des Fahrrads. https://dasfahrradblog.blogspot.com/2015/04/die-co2-bilanz-des-fahrrads.html (abgerufen am 01.04.2022)</p>
   </div>
 
   <!-- W3.CSS Container -->
