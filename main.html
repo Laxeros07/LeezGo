@@ -25,13 +25,13 @@
   
  
   <body>
-    <div class="header">
+    <div class="header" style="background-image: url('img/bike-heading.jpg');">
       <div id="klingel" onclick="playK()"></div>
       <audio id="audioK" src="sound/klingel.mp3"></audio>
     </div>
 
   <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;height: calc(100% - 20px);" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;background-image: none;
   background-color: transparent !important;">Close Menu</a>
   <div class="w3-container">
@@ -50,7 +50,7 @@
       <div class="card">
         <b>
           <div style="float: left;">
-            <p>Countdown to Pizza:</p>
+            <p>Countdown to Lunch:</p>
             <p id="demo"></p>
           </div>
           <img src="img/pizza.png" style="float: right; width: 40px;">
@@ -78,9 +78,7 @@
   <div class="w3-container" id="willkommen">
     <h1 class="w3-xxxlarge w3-text-red"><b>Willkommen.</b></h1>
     <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-    <p>Willkommen auf unserer Website! Wir sind das Team von LeezGo, eine Gruppe von Geoinformatik-Stundenten der WWU Münster. Mit dieser Website wollen wir das Verkehrsmittel Fahrrad in Münster noch beliebter machen, indem wir auf Probleme hinweisen. Da seid ihr gefragt! Wir haben eine anonyme Umfrage vorbereitet, mit der wir Auto und Fahrrad fahren in Münster analysieren und so Lösungsvorschläge erarbeiten.
-    </p>
-    <p>Die Umfrage geht super schnell und hilft uns ungemein!<br>Vielen Dank!
+    <p>Willkommen auf unserer Website!<br>Wir sind das Team von LeezGo, eine Gruppe von Geoinformatik-Stundenten der WWU Münster. Mit dieser Website wollen wir das Verkehrsmittel Fahrrad in Münster noch beliebter machen, indem wir auf Probleme hinweisen. Da seid ihr gefragt! Wir haben eine anonyme Umfrage vorbereitet, mit der wir Auto und Fahrrad fahren in Münster analysieren und so Lösungsvorschläge erarbeiten. Die Umfrage geht super schnell und hilft uns ungemein!<br>Vielen Dank!
     </p>
   </div>
 
@@ -120,10 +118,14 @@
     <p><br><br><br></p>
   </div>
 
+  <!-- W3.CSS Container -->
+
+
 <!-- End page content -->
 </div>
+<div class="w3-light-grey w3-container w3-padding-32 footer" style="margin-top:75px;padding-right:58px; height:100px"><p class="w3-right">Gesellschaft © Leez Go. Alle Rechte vorbehalten.</p></div>
 
-
+<!--
 <div id="cookiedingsbums"><div>
   <span style="color: #7bb51d;">Ja, auch diese Webseite verwendet Cookies. 
     
@@ -136,7 +138,7 @@
  jQuery('#cookiedingsbums').prependTo('body');
  jQuery('#cookiedingsbumsCloser').show();
 </script>
-    
+-->
     
   </body>
 

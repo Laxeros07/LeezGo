@@ -4,7 +4,7 @@ body{
     color: white;
 }
 
-.header {
+.header, .footer {
     text-align: center;
     /*background: #7ab51d;*/
     padding: 20px;
@@ -15,8 +15,12 @@ body{
     border-radius: 20px;
     width: calc(100% - var(--sidebarWidth) - 30px);
     height: 300px;
-    background-image: url("../img/bike-heading.jpg");
     float: right;
+}
+
+.footer{
+    color: #fff !important;
+    background-color: #696969 !important;
 }
 
 #headerContainer::before, #headerContainer::after{
