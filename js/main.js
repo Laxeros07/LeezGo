@@ -64,4 +64,12 @@ function co2Rechnen(){
   document.getElementById("ergebnis").innerHTML = ergebnis;
 }
 
+$(document).ready(function(){
+  
+  $('.pause').click(function(){
+    $('.bike').toggleClass("paused");
+    $('.pause').toggleClass("active");
+  });
+});
+
 //grün 47.8 71 11.4
