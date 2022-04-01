@@ -49,7 +49,7 @@ function playL() {
 function co2Rechnen(){
 
   let x = document.getElementById("kmInput").value;
-  let ergebnis = "<table class='blueTable'><thead>";
+  let ergebnis = "<table class='blueTable' style='margin-top: 10px;''><thead>";
   ergebnis += "<tr>";
   ergebnis += "<th>Auto</th>";
   ergebnis += "<th>E-Bike</th>";
