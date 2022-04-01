@@ -35,7 +35,8 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;background-image: none;
   background-color: transparent !important;">Close Menu</a>
   <div class="w3-container">
-    <img src="img/LeezGoLogo.png" style="width: 200px; margin-bottom: 20px;">
+    <img src="img/LeezGoLogo.png" style="width: 200px; margin-bottom: 20px;" onClick="playL()">
+    <audio id="audioL" src="sound/letsgo.mp3"></audio>
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
@@ -45,6 +46,13 @@
     <a href="#co2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Co2-Rechner</a> 
     <a class="myHupe" onclick="playH()" style="margin-top: 20px;">TüT TüT </a>
     <audio id="audioH" src="sound/hupe.mp3"></audio>
+
+    <div class="bicycle">
+      <div class="wheel front-wheel"></div>
+      <div class=""
+
+
+    </div>
 
     <div style="position: absolute; bottom: 20px; left: 0; color:black">
       <div class="card">
@@ -112,8 +120,8 @@
         <input id="kmInput" type="number" min="0" step="0.1"> km 
         <span></span>	
       </span>
-    </p>
-    <button id="rechnen" onCLick="co2Rechnen()">Rechnen</button>
+    
+    <button class="rechnen" id="rechnen" onCLick="co2Rechnen()">Rechnen</button>
     <div id="ergebnis"></div>
     <p><br><b>Die Berechnung</b><br><br>
     Ein <b>PKW</b> emittiert bei einem Verbrauch von 6L/100km 142g CO2. Durch die Produktion wurden 6T CO2 ausgestoßen, bei einer Laufleistung von 300km bedeutet das 23g/km, insgesamt: 169g/km.<br><br>
@@ -130,7 +138,7 @@
 
 <!-- End page content -->
 </div>
-<div class="w3-light-grey w3-container w3-padding-32 footer" style="margin-top:75px;padding-right:58px; height:100px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32 footer" style="margin-top:75px;padding-right:58px; height:100px"><p class="w3-right">Gesellschaft © Leez Go. Alle Rechte vorbehalten.</p></div>
 
 <!--
 <div id="cookiedingsbums"><div>

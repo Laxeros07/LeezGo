@@ -18,6 +18,11 @@ body{
     float: right;
 }
 
+.footer{
+    color: #fff !important;
+    background-color: #696969 !important;
+}
+
 #headerContainer::before, #headerContainer::after{
     content: "";
     display: table;
@@ -70,4 +75,26 @@ body{
 
 #klingel:hover{
     cursor: pointer;
+}
+
+.rechnen {
+	background-color:#7bb51d;
+	border-radius:28px;
+	border:1px solid #124d18;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font: size 15px;
+	/*font-weight:bold;*/
+	padding: auto;
+	text-decoration:none;
+	/*text-shadow:-2px 4px 3px #2f6627;*/
+}
+.rechnen:hover {
+	background-color:#5cbf2a;
+}
+.rechnen:active {
+	position:relative;
+	top:1px;
 }
