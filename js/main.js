@@ -29,10 +29,20 @@ var x = setInterval(function() {
 
 function playH() {
   var audio = document.getElementById("audioH");
+  audio.pause();
+  audio.currentTime = 0;
   audio.play();
 }
 function playK() {
   var audio = document.getElementById("audioK");
+  audio.pause();
+  audio.currentTime = 0;
+  audio.play();
+}
+function playL() {
+  var audio = document.getElementById("audioL");
+  audio.pause();
+  audio.currentTime = 0;
   audio.play();
 }
 
