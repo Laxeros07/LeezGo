@@ -98,3 +98,6 @@ body{
 	position:relative;
 	top:1px;
 }
+#logo:hover{
+    cursor: pointer;
+}
