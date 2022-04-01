@@ -81,12 +81,11 @@ body{
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:10px 20px;
+	font: size 15px;
+	/*font-weight:bold;*/
+	padding: auto;
 	text-decoration:none;
-	text-shadow:-2px 4px 3px #2f6627;
-    float: left;
+	/*text-shadow:-2px 4px 3px #2f6627;*/
 }
 .rechnen:hover {
 	background-color:#5cbf2a;
