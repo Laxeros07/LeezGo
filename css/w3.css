@@ -1,27 +1,42 @@
 :root {
     --sidebarWidth: 300px;
-  }
-  
+}
 
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-size: 16px;
+}
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.w3-half img:hover {
+    opacity: 1;
+}
 
-
-.w3-red, .w3-hover-red:hover {
+.w3-red,
+.w3-hover-red:hover {
     background-image: linear-gradient(to top, #7bb51d, #e2e3ae);
-  }
+}
 
-#mySidebar{
+#mySidebar {
     width: var(--sidebarWidth);
 }
 
-.w3-text-red{
+.w3-text-red {
     color: #7bb51d !important;
 }
 
-.w3-sidebar{
+.w3-sidebar {
     border-radius: 20px;
     margin: 10px;
 }

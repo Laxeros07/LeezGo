@@ -1,139 +1,188 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   
-    <meta charset="utf-8">
-    <title>LeezGo</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>LeezGo</title>
 
-    <link rel="shortcut icon" type="image/png" href="img/LogoIcon.png" />
+        <link rel="shortcut icon" type="image/png" href="img/LogoIcon.png" />
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/w3.css"> 
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">  
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/pizza.css">  
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/Rechner.css">  
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/cookiedingsbums.css">  
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/Input.css">  
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/w3.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/pizza.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/Rechner.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/cookiedingsbums.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/Input.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-    
-  </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
 
-  
- 
-  <body>
-    <div class="header" style="background-image: url('img/bike-heading.jpg');">
-      <div id="klingel" onclick="playK()"></div>
-      <audio id="audioK" src="sound/klingel.mp3"></audio>
-    </div>
+    <body>
+        <div class="header" style="background-image: url('img/bike-heading.jpg')">
+            <div id="klingel" onclick="playK()"></div>
+            <audio id="audioK" src="sound/klingel.mp3"></audio>
+        </div>
 
-  <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;height: calc(100% - 20px);" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;background-image: none;
-  background-color: transparent !important;">Close Menu</a>
-  <div class="w3-container">
-    <img id="logo" src="img/LeezGoLogo.png" style="width: 200px; margin-bottom: 20px;" onclick="playL()">
-    <audio id="audioL" src="sound/letsgo.mp3"></audio>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#willkommen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Willkommen</a>
-    <a href="#umfrage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Umfrage</a> 
-    <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dashboard</a> 
-    <a href="#co2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Co2-Rechner</a> 
-    <a class="myHupe" onclick="playH()" style="margin-top: 20px;">TüT TüT </a>
-    <audio id="audioH" src="sound/hupe.mp3"></audio>
+        <!-- Sidebar/menu -->
+        <nav
+            class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+            style="z-index: 3; width: 300px; font-weight: bold; height: calc(100% - 20px)"
+            id="mySidebar"
+        >
+            <br />
+            <a
+                href="javascript:void(0)"
+                onclick="w3_close()"
+                class="w3-button w3-hide-large w3-display-topleft"
+                style="width: 100%; font-size: 22px; background-image: none; background-color: transparent !important"
+                >Close Menu</a
+            >
+            <div class="w3-container">
+                <img id="logo" src="img/LeezGoLogo.png" style="width: 200px; margin-bottom: 20px" onclick="playL()" />
+                <audio id="audioL" src="sound/letsgo.mp3"></audio>
+            </div>
+            <div class="w3-bar-block">
+                <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+                <a href="#willkommen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Willkommen</a>
+                <a href="#umfrage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Umfrage</a>
+                <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dashboard</a>
+                <a href="#co2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Co2-Rechner</a>
+                <a class="myHupe" onclick="playH()" style="margin-top: 20px">TüT TüT </a>
+                <audio id="audioH" src="sound/hupe.mp3"></audio>
 
-    <div style="position: absolute; bottom: 20px; left: 0; color:black">
-      <div class="card">
-        <b>
-          <div style="float: left;">
-            <p>Countdown to Pizza:</p>
-            <p id="demo"></p>
-          </div>
-          <img src="img/pizza.png" style="float: right; width: 40px;">
-        </b>
-      </div>
-    </div>
+                <div style="position: absolute; bottom: 20px; left: 0; color: black">
+                    <div class="card">
+                        <b>
+                            <div style="float: left">
+                                <p>Countdown to Pizza:</p>
+                                <p id="demo"></p>
+                            </div>
+                            <img src="img/pizza.png" style="float: right; width: 40px" />
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-  </div>
-</nav>
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+            <a
+                href="javascript:void(0)"
+                class="w3-button w3-red w3-margin-right"
+                onclick="w3_open()"
+                style="background-image: none; background-color: transparent !important"
+                >☰</a
+            >
+            <span>Leez Go</span>
+        </header>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()" style="background-image: none;
-  background-color: transparent !important;">☰</a>
-  <span>Leez Go</span>
-</header>
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div
+            class="w3-overlay w3-hide-large"
+            onclick="w3_close()"
+            style="cursor: pointer"
+            title="close side menu"
+            id="myOverlay"
+        ></div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+            <!-- Willkommen -->
+            <div class="w3-container" id="willkommen">
+                <h1 class="w3-xxxlarge w3-text-red"><b>Willkommen.</b></h1>
+                <hr style="width: 50px; border: 5px solid #7bb51d" class="w3-round" />
+                <p>
+                    Willkommen auf unserer Website!<br />Wir sind das Team von LeezGo, eine Gruppe von
+                    Geoinformatik-Stundenten der WWU Münster. Mit dieser Website wollen wir das Verkehrsmittel Fahrrad
+                    in Münster noch beliebter machen, indem wir auf Probleme hinweisen. Da seid ihr gefragt! Wir haben
+                    eine anonyme Umfrage vorbereitet, mit der wir Auto und Fahrrad fahren in Münster analysieren und so
+                    Lösungsvorschläge erarbeiten. Die Umfrage geht super schnell und hilft uns ungemein!<br />Vielen
+                    Dank!
+                </p>
+            </div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+            <!-- Umfrage -->
+            <div class="w3-container" id="umfrage" style="margin-top: 75px">
+                <h1 class="w3-xxxlarge w3-text-red"><b>Umfrage.</b></h1>
+                <hr style="width: 50px; border: 5px solid #7bb51d" class="w3-round" />
+                <p>
+                    In unserer Umfrage könnt Ihr super spannende Fragen zum coolsten Verkehrsmittel ever beantworten!
+                    Sagt uns einfach wie Ihr euch am liebsten fortbewegt, was euch stört und wie ihr es besser machen
+                    würdet.
+                </p>
+                <p>Viel Spaß beim ausfüllen!</p>
+                <p><a href="https://arcg.is/W54uS0" target="_blank">Hier gehts zur Umfrage</a></p>
+            </div>
 
-  <!-- Willkommen -->
-  <div class="w3-container" id="willkommen">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Willkommen.</b></h1>
-    <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-    <p>Willkommen auf unserer Website!<br>Wir sind das Team von LeezGo, eine Gruppe von Geoinformatik-Stundenten der WWU Münster. Mit dieser Website wollen wir das Verkehrsmittel Fahrrad in Münster noch beliebter machen, indem wir auf Probleme hinweisen. Da seid ihr gefragt! Wir haben eine anonyme Umfrage vorbereitet, mit der wir Auto und Fahrrad fahren in Münster analysieren und so Lösungsvorschläge erarbeiten. Die Umfrage geht super schnell und hilft uns ungemein!<br>Vielen Dank!
-    </p>
-  </div>
+            <!-- Dashboard -->
+            <div class="w3-container" id="dashboard">
+                <h1 class="w3-xxxlarge w3-text-red"><b>Dashboard.</b></h1>
+                <hr style="width: 50px; border: 5px solid #7bb51d" class="w3-round" />
+                <p>
+                    Hier seht ihr direkt die Auswertung unserer Umfrage. Ihr könnt selber ableiten, welche Probleme
+                    auftreten und so eigenständig Lösungsvorschläge mit uns teilen. Schreibt uns einfach!
+                </p>
+                <br />
+                <iframe
+                    src="https://www.arcgis.com/apps/dashboards/206dd69ca2154a4a8a5e0d1a1631448a"
+                    style="height: 600px; width: 100%"
+                    name="Dashboard Website"
+                    ><!-- //required for browser compatibility --></iframe
+                >
+            </div>
 
-  <!-- Umfrage -->
-  <div class="w3-container" id="umfrage" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Umfrage.</b></h1>
-    <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-    <p>In unserer Umfrage könnt Ihr super spannende Fragen zum coolsten Verkehrsmittel ever beantworten!
-      Sagt uns einfach wie Ihr euch am liebsten fortbewegt, was euch stört und wie ihr es besser machen würdet.</p>
-    <p>Viel Spaß beim ausfüllen!
-    </p>
-    <p><a href="https://arcg.is/W54uS0" target="_blank">Hier gehts zur Umfrage</a>
-    </p>
-  </div>
+            <!-- CO2 -->
+            <div class="w3-container" id="co2" style="margin-top: 75px">
+                <h1 class="w3-xxxlarge w3-text-red"><b>CO2-Rechner.</b></h1>
+                <hr style="width: 50px; border: 5px solid #7bb51d" class="w3-round" />
+                <p>
+                    Der CO2-Rechner ermöglicht es dir deinen ökologischen Fußabdruck selbst zu berechnen. Gib einfach
+                    die Länge deines Weges zur Schule/Universität/Arbeit ein und der Rechner zeigt dir, wie viel CO2 du
+                    auf diesem Weg mit dem Auto, mit dem e-Bike oder mit dem Fahrrad emittierst.
+                </p>
+                <br />
+                <p>
+                    <span class="input" style="padding-right: 10px">
+                        <input id="kmInput" type="number" min="0" step="0.1" /> km
+                        <span></span>
+                    </span>
 
-    <!-- Dashboard -->
-    <div class="w3-container" id="dashboard">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Dashboard.</b></h1>
-      <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-      <p>Hier seht ihr direkt die Auswertung unserer Umfrage. Ihr könnt selber ableiten, welche Probleme auftreten und so eigenständig Lösungsvorschläge mit uns teilen. Schreibt uns einfach!</p><br>
-      <iframe src="https://www.arcgis.com/apps/dashboards/206dd69ca2154a4a8a5e0d1a1631448a" style="height: 600px; width: 100%" name="Dashboard Website"><!-- //required for browser compatibility --></iframe>
-    </div>
-  
-  <!-- CO2 -->
-  <div class="w3-container" id="co2" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>CO2-Rechner.</b></h1>
-    <hr style="width:50px;border:5px solid #7bb51d" class="w3-round">
-    <p>Der CO2-Rechner ermöglicht es dir deinen ökologischen Fußabdruck selbst zu berechnen. Gib einfach die Länge deines Weges zur Schule/Universität/Arbeit ein und der Rechner zeigt dir, wie viel CO2 du auf diesem Weg mit dem Auto, mit dem e-Bike oder mit dem Fahrrad emittierst.</p><br>
-    <p>
-      <span class="input" style="padding-right:10px ;">
-        <input id="kmInput" type="number" min="0" step="0.1"> km 
-        <span></span>	
-      </span>
-    
-    <button class="rechnen" id="rechnen" onCLick="co2Rechnen()">Rechnen</button>
-    <div id="ergebnis"></div>
-    <p><br><b>Die Berechnung</b><br><br>
-    Ein <b>PKW</b> emittiert bei einem Verbrauch von 6L/100km 142g CO2. Durch die Produktion wurden 6T CO2 ausgestoßen, bei einer Laufleistung von 300km bedeutet das 23g/km, insgesamt: 169g/km.<br><br>
+                    <button class="rechnen" id="rechnen" onCLick="co2Rechnen()">Rechnen</button>
+                </p>
 
-    Bei der Fahrt mit einem <b>Fahrrad</b> werden 5g/km, durch Produktion und Reifenabrieb, ausgestoßen. Hier muss aber noch der erhöhte CO2-Ausstoßs des Menschen berücksichtigt werden. Ein Mensch auf dem Fahrrad stößt 16g CO2 aus, durch eine erhöhte Atmung und einer erhöhten Nachfrage nach Nahrung.<br><br>
-      
-    Mit einem <b>e-Bike</b> werden 23g/km, durch Produktion und Reifenabrieb, aber auch durch die Batterie und das Aufladen dieser, emittiert.<br><br>
-    
-    Quelle: Lehmann C. 2015: Die CO2-Bilanz des Fahrrads. https://dasfahrradblog.blogspot.com/2015/04/die-co2-bilanz-des-fahrrads.html (abgerufen am 01.04.2022)</p>
-  </div>
+                <div id="ergebnis"></div>
+                <p>
+                    <br /><b>Die Berechnung</b><br /><br />
+                    Ein <b>PKW</b> emittiert bei einem Verbrauch von 6L/100km 142g CO2. Durch die Produktion wurden 6T
+                    CO2 ausgestoßen, bei einer Laufleistung von 300km bedeutet das 23g/km, insgesamt: 169g/km.<br /><br />
 
-  <!-- W3.CSS Container -->
+                    Bei der Fahrt mit einem <b>Fahrrad</b> werden 5g/km, durch Produktion und Reifenabrieb, ausgestoßen.
+                    Hier muss aber noch der erhöhte CO2-Ausstoßs des Menschen berücksichtigt werden. Ein Mensch auf dem
+                    Fahrrad stößt 16g CO2 aus, durch eine erhöhte Atmung und einer erhöhten Nachfrage nach Nahrung.<br /><br />
 
+                    Mit einem <b>e-Bike</b> werden 23g/km, durch Produktion und Reifenabrieb, aber auch durch die
+                    Batterie und das Aufladen dieser, emittiert.<br /><br />
 
-<!-- End page content -->
-</div>
-<div class="w3-light-grey w3-container w3-padding-32 footer" style="margin-top:75px;padding-right:58px; height:100px"><p class="w3-right">Gesellschaft © Leez Go. Alle Rechte vorbehalten.</p></div>
+                    Quelle: Lehmann C. 2015: Die CO2-Bilanz des Fahrrads.
+                    https://dasfahrradblog.blogspot.com/2015/04/die-co2-bilanz-des-fahrrads.html (abgerufen am
+                    01.04.2022)
+                </p>
+            </div>
 
-<!--
+            <!-- W3.CSS Container -->
+
+            <!-- End page content -->
+        </div>
+        <div
+            class="w3-light-grey w3-container w3-padding-32 footer"
+            style="margin-top: 75px; padding-right: 58px; height: 100px"
+        >
+            <p class="w3-right">Gesellschaft © Leez Go. Alle Rechte vorbehalten.</p>
+        </div>
+
+        <!--
 <div id="cookiedingsbums"><div>
   <span style="color: #7bb51d;">Ja, auch diese Webseite verwendet Cookies. 
     
@@ -147,10 +196,8 @@
  jQuery('#cookiedingsbumsCloser').show();
 </script>
 -->
-    
-  </body>
+    </body>
 
-  <script src="js/main.js"></script>
-  <script src="js/w3.js"></script>
-  
+    <script src="js/main.js"></script>
+    <script src="js/w3.js"></script>
 </html>
